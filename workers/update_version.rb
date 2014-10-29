@@ -32,6 +32,7 @@ class UpdateVersion
       :body => compressed_content,
       "Content-Type" => content_type,
       "Content-Encoding" => "gzip",
+      "Cache-Control" => "max-age=31536000",
       :public => true
     )
 
